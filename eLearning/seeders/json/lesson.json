@@ -1,0 +1,29 @@
+[
+    {
+        "title": "course 1 - lesson 1",
+        "content": "",
+        "video": "",
+        "file": "",
+        "minimumScore": 9.4,
+        "maximumRetest": 2,
+        "isQuiz": "0"
+    },
+    {
+        "title": "course 1 - lesson 2",
+        "content": "",
+        "video": "",
+        "file": "",
+        "minimumScore": 7.5,
+        "maximumRetest": 2,
+        "isQuiz": "1"
+    },
+    {
+        "title": "course 2 - lesson 1",
+        "content": "",
+        "video": "",
+        "file": "",
+        "minimumScore": 8.5,
+        "maximumRetest": 1,
+        "isQuiz": "1"
+    }
+]

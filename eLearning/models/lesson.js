@@ -11,6 +11,11 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Lesson.belongsToMany(models.Course, {
+        through: 'CourseLessons',
+        as: 'Lessons',
+        foreignKey: 'LessonId'
+      })
     }
   };
   Lesson.init({

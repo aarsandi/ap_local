@@ -9,22 +9,31 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       title: {
+        allowNull: false,
         type: Sequelize.STRING
       },
       description: {
+        allowNull: false,
         type: Sequelize.TEXT
       },
       image: {
         type: Sequelize.TEXT
       },
       price: {
+        allowNull: false,
         type: Sequelize.FLOAT
       },
       status: {
         type: Sequelize.STRING
       },
       CourseCategoryId: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: { 
+          model: 'CourseCategories',
+          key: 'id'
+        },
+        onUpdate: 'cascade',
+        onDelete: 'cascade'
       },
       createdAt: {
         allowNull: false,

@@ -9,10 +9,22 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       LessonId: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: { 
+          model: 'Lessons',
+          key: 'id'
+        },
+        onUpdate: 'cascade',
+        onDelete: 'cascade'
       },
       CourseUserId: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: { 
+          model: 'CourseUsers',
+          key: 'id'
+        },
+        onUpdate: 'cascade',
+        onDelete: 'cascade'
       },
       score: {
         type: Sequelize.FLOAT

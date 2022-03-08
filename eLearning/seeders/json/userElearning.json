@@ -1,0 +1,26 @@
+[
+    {
+        "username": "user1",
+        "password": "password",
+        "fullname": "user1",
+        "document": "",
+        "email": "user1@mail.com",
+        "address": "dummy",
+        "phoneNumber": "0123456789",
+        "isApproved": "0",
+        "linkedin": "",
+        "avatar": ""
+    },
+    {
+        "username": "user2",
+        "password": "password",
+        "fullname": "user2",
+        "document": "",
+        "email": "user2@mail.com",
+        "address": "",
+        "phoneNumber": "0123456789",
+        "isApproved": "0",
+        "linkedin": "",
+        "avatar": ""
+    }
+]

@@ -9,12 +9,20 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       UserElearningId: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: { 
+          model: 'UserElearnings',
+          key: 'id'
+        },
+        onUpdate: 'cascade',
+        onDelete: 'cascade'
       },
       totalPrice: {
+        allowNull: false,
         type: Sequelize.FLOAT
       },
       paymentMethod: {
+        allowNull: false,
         type: Sequelize.STRING
       },
       transactionDate: {

@@ -9,10 +9,22 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       ElearningTransactionId: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: { 
+          model: 'ElearningTransactions',
+          key: 'id'
+        },
+        onUpdate: 'cascade',
+        onDelete: 'cascade'
       },
       CourseId: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: { 
+          model: 'Courses',
+          key: 'id'
+        },
+        onUpdate: 'cascade',
+        onDelete: 'cascade'
       },
       price: {
         type: Sequelize.FLOAT

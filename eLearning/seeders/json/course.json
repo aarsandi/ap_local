@@ -1,0 +1,17 @@
+[
+    {
+        "title": "course 1",
+        "description": "",
+        "image": "",
+        "price": 150000,
+        "status": "daring",
+        "CourseCategoryId": 1
+    },{
+        "title": "course 2",
+        "description": "",
+        "image": "",
+        "price": 678000,
+        "status": "daring",
+        "CourseCategoryId": 2
+    }
+]

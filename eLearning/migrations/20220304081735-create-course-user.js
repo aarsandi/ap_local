@@ -9,10 +9,22 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       UserElearningId: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: { 
+          model: 'UserElearnings',
+          key: 'id'
+        },
+        onUpdate: 'cascade',
+        onDelete: 'cascade'
       },
       CourseId: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: { 
+          model: 'Courses',
+          key: 'id'
+        },
+        onUpdate: 'cascade',
+        onDelete: 'cascade'
       },
       startDate: {
         type: Sequelize.DATE

@@ -1,0 +1,14 @@
+[
+    {
+        "CourseId": 1,
+        "LessonId": 1
+    },
+    {
+        "CourseId": 1,
+        "LessonId": 2
+    },
+    {
+        "CourseId": 2,
+        "LessonId": 3
+    }
+]
